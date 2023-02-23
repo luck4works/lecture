@@ -1,0 +1,16 @@
+{{>layouts/header}}
+
+<form action="/articles/create" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">제목</label>
+    <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">내용</label>
+    <textarea name="content" class="form-control" id="exampleInputPassword1"></textarea>
+  </div>  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a href="/articles" class="btn">돌아가기</a>
+</form>
+		
+{{>layouts/footer}}
